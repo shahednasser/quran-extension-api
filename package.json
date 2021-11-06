@@ -1,0 +1,32 @@
+{
+  "name": "quran-extension-api",
+  "version": "1.0.0",
+  "description": "API for quran-extension",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "preparedb": "node database.js",
+    "postinstall": "npm run preparedb"
+  },
+  "keywords": [
+    "quran",
+    "api",
+    "node",
+    "express"
+  ],
+  "author": "Shahed Nasser",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "nodemon": "^2.0.14"
+  }
+}
